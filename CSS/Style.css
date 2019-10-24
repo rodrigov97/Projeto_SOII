@@ -1,7 +1,10 @@
 /* Classes para ajustes */
-
 .icon-margin {
   margin-right: 10px;
+}
+
+.html {
+  font-weight: lighter;
 }
 
 /* Classes Principais */
@@ -94,17 +97,29 @@
 
 .content-container {
   padding-left: 220px;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+  margin-top: -6px;
+  background-color: #ffff;
 }
 
 /* Formulario de Novo Usuário */
 
 .form-novoUsuario {
   margin: 0 120px;
-  background-color: aqua;
+  margin-top: -20px;
+  border: 1px solid #5a5a5a;
+  border-radius: 5px;
+  padding: 20px 0;
 }
 
 .form-novoUsuario legend {
   text-align: center;
+  font-size: 25px;
 }
 
 .form-novoUsuario form {
@@ -119,22 +134,44 @@
   display: table-cell;
   width: 200px;
   text-align: right;
+  text-transform: uppercase;
 }
 
 .form-novoUsuario input {
   display: table-cell;
   align-items: left;
-  width: 200px;
+  width: 230px;
   margin: 10px 10px;
   padding: 2px 10px;
+  /* Visual */
+  border: 2px solid #5a5a5a;
+  border-radius: 5px;
+  background-color: #ececec;
 }
 
 .form-novoUsuario textarea {
   margin-left: 10px;
+  margin-top: 10px;
+  padding: 2px 10px;
   resize: none;
+  /* Visual */
+  border: 2px solid #5a5a5a;
+  border-radius: 5px;
+  background-color: #ececec;
 }
 
 .form-novoUsuario .form-button {
   width: 100%;
   text-align: center;
+}
+
+.form-novoUsuario .form-button button {
+  margin: 20px 20px;
+  margin-top: 10px;
+  /* Visual */
+  border: 2px solid #5a5a5a;
+  border-radius: 5px;
+  background-color: #969696;
+  font-weight: bold;
+  color: #1a1a1a;
 }
