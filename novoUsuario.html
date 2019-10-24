@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta>
+    <meta>
+    <link rel="stylesheet" href="./CSS/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./CSS/Bootstrap/bootstrap-grid.css">
+    <link rel="stylesheet" href="./CSS/Bootstrap/bootstrap-reboot.css">
+    <link rel="stylesheet" href="./CSS/Style.css">
+    <script src="./CSS/fontawesome-free-5.11.2-web/js/all.js"></script>
+    <script src="./CSS/fontawesome-free-5.11.2-web/js/v4-shims.js"></script>
+    <script src="./JS/Bootstrap/bootstrap.js"></script>
+    <script src="./JS/Bootstrap/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+    <div class="sidebar-container">
+        <div class="sidebar-logo">Projeto SO II</div>
+        <ul class="sidebar-navigation">
+            <li class="header">Menu</li>
+            <li><a href="index.html"><i class="fa fa-home icon-margin" aria-hidden="true"></i>Home</a></li>
+            <li class="header">Usuário</li>
+            <li><a href="novoUsuario.html"><i class="fa fa-user icon-margin" aria-hidden="true"></i>Novo Usuário</a>
+            </li>
+            <li><a href="#"><i class="fa fa-remove icon-margin" aria-hidden="true"></i>Remover Usário</a></li>
+            <li class="header">Grupo</li>
+            <li><a href="#"><i class="fa fa-users icon-margin" aria-hidden="true"></i>Criar Grupo</a></li>
+            <li><a href="#"><i class="fa fa-remove icon-margin" aria-hidden="true"></i>Remover Grupo</a></li>
+            <li class="header">Info</li>
+            <li><a href="#"><i class="fa fa-info-circle icon-margin" aria-hidden="true"></i>Info</a></li>
+        </ul>
+    </div>
+    <div class="content-container">
+        <div class="container-fluid">
+            <!-- Coloque o conteúdo da página aqui-->
+            <div class="jumbotron">
+                <div class="form-novoUsuario" id="campo_princ">
+                    <fieldset id="field_cadastro_user">
+                        <legend id="cad_user">Cadastro de Novo Usuário</legend>
+                        <br>
+                        <form method="post" id="form_novoUsuario">
+                            <p><label for="user">Login do Usuário</label><input type="text" name="" id=""
+                                    placeholder="Nome do usuário"></p>
+                            <p><label for="password">Senha </label><input type="password" name="" id="cPassword"
+                                    placeholder="Senha"></p>
+                            <p><label for="repeatPassword">Repetir Senha </label><input type="password" name="" id=""
+                                    placeholder="Repita a senha"></p>
+                            <p><label for="primaryGroup">Grupo Primario </label><input type="text" name="" id=""
+                                    placeholder="Grupo -g"></p>
+                            <p><label for="secondGroup">Grupo Secundario</label><input type="text" name="" id=""
+                                    placeholder="Grupo -G"></p>
+                            <p><label for="geco">Gecos</label><textarea name="" id="" cols="45" rows="5"
+                                    placeholder="Digite Informações do Usuário"></textarea></p>
+                            <div class="form-button">
+                                <button type="button" form="form_novoUsuario">Registrar</button>
+                            </div>
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
