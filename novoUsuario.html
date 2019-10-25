@@ -3,8 +3,7 @@
 
 <head>
     <title></title>
-    <meta>
-    <meta>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="./CSS/Bootstrap/bootstrap.css">
     <link rel="stylesheet" href="./CSS/Bootstrap/bootstrap-grid.css">
     <link rel="stylesheet" href="./CSS/Bootstrap/bootstrap-reboot.css">
@@ -39,21 +38,21 @@
                 <div class="form-novoUsuario" id="campo_princ">
                     <fieldset id="field_cadastro_user">
                         <legend id="cad_user">CADASTRO DE NOVO USUÁRIO</legend>
-                        <form method="post" id="form_novoUsuario">
-                            <p><label for="user">Login do Usuário</label><input type="text" name="" id=""
+                        <form method="post" id="form_novoUsuario" action="novoUsuario.php" target="_blank">
+                            <p><label for="user">Login do Usuário</label><input type="text" name="username" id=""
                                     placeholder="Nome do usuário"></p>
-                            <p><label for="password">Senha </label><input type="password" name="" id="cPassword"
+                            <p><label for="password">Senha </label><input type="password" name="passwd" id=""
                                     placeholder="Senha"></p>
-                            <p><label for="repeatPassword">Repetir Senha </label><input type="password" name="" id=""
+                            <p><label for="repeatPassword">Repetir Senha </label><input type="password" name="confirmedPasswd" id=""
                                     placeholder="Repita a senha"></p>
-                            <p><label for="primaryGroup">Grupo Primario </label><input type="text" name="" id=""
+                            <p><label for="primaryGroup">Grupo Primario </label><input type="text" name="prGroup" id=""
                                     placeholder="Grupo -g"></p>
-                            <p><label for="secondGroup">Grupo Secundário</label><input type="text" name="" id=""
+                            <p><label for="secondGroup">Grupo Secundário</label><input type="text" name="secGroup" id=""
                                     placeholder="Grupo -G"></p>
-                            <p><label for="geco">Gecos</label><textarea name="" id="" cols="45" rows="5"
+                            <p><label for="gecos">Gecos</label><textarea name="gecos" id="" cols="45" rows="5"
                                     placeholder="Digite Informações do Usuário"></textarea></p>
                             <p class="form-button">
-                                <label></label><button type="button" form="form_novoUsuario">REGISTRAR</button>
+                                <label></label><input type="submit" form="form_novoUsuario" value="REGISTRAR"></input>
                             </p>
                         </form>
                     </fieldset>

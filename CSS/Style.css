@@ -128,6 +128,7 @@
 
 .form-novoUsuario p {
   display: table-row;
+  width: 100%;
 }
 
 .form-novoUsuario label {
@@ -165,7 +166,7 @@
   text-align: center;
 }
 
-.form-novoUsuario .form-button button {
+.form-novoUsuario .form-button input {
   margin: 20px 20px;
   margin-top: 10px;
   /* Visual */
