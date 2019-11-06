@@ -35,7 +35,28 @@
         <div class="container-fluid">
             <!-- Coloque o conteúdo da página aqui-->
             <div class="jumbotron">
-                HOME
+                <div class="form-style" id="content">
+                    <fieldset id="field_removerUsuario">
+                        <legend id="cad_user">REMOÇÃO DE CONTA DE USUÁRIO</legend>
+                        <form method="post" id="form_removerUsuario" action="removerUsuario.php" target="_blank">
+                            <p><label for="user">Login do Usuário</label><input type="text" name="username" id=""
+                                    placeholder="Nome do usuário"></p>
+                            <p class="form-button">
+                                <label></label><input type="submit" form="form_removerUsuario" value="REMOVER"></input>
+                            </p>
+                        </form>
+                        <legend id="cad_user" style="margin-top: 20px;">REMOÇÃO DE USUÁRIO DO GRUPO</legend>
+                        <form method="post" id="form_removerGrupoUsuario" action="removerGrupoUsuario.php" target="_blank">
+                            <p><label for="user">Login do Usuário</label><input type="text" name="username" id=""
+                                    placeholder="Nome do usuário"></p>
+                            <p><label for="group">Grupo</label><input type="text" name="group" id=""
+                                    placeholder="Grupo"></p>
+                            <p class="form-button">
+                                <label></label><input type="submit" form="form_removerGrupoUsuario" value="REMOVER"></input>
+                            </p>
+                        </form>
+                    </fieldset>
+                </div>
             </div>
         </div>
 </body>

@@ -23,10 +23,10 @@
             <li class="header">Usuário</li>
             <li><a href="novoUsuario.html"><i class="fa fa-user icon-margin" aria-hidden="true"></i>Novo Usuário</a>
             </li>
-            <li><a href="#"><i class="fa fa-remove icon-margin" aria-hidden="true"></i>Remover Usário</a></li>
+            <li><a href="removerUsuario.html"><i class="fa fa-remove icon-margin" aria-hidden="true"></i>Remover Usário</a></li>
             <li class="header">Grupo</li>
-            <li><a href="#"><i class="fa fa-users icon-margin" aria-hidden="true"></i>Criar Grupo</a></li>
-            <li><a href="#"><i class="fa fa-remove icon-margin" aria-hidden="true"></i>Remover Grupo</a></li>
+            <li><a href="novoGrupo.html"><i class="fa fa-users icon-margin" aria-hidden="true"></i>Criar Grupo</a></li>
+            <li><a href="deletarGrupo.html"><i class="fa fa-remove icon-margin" aria-hidden="true"></i>Remover Grupo</a></li>
             <li class="header">Info</li>
             <li><a href="#"><i class="fa fa-info-circle icon-margin" aria-hidden="true"></i>Info</a></li>
         </ul>
@@ -35,10 +35,10 @@
         <div class="container-fluid">
             <!-- Coloque o conteúdo da página aqui-->
             <div class="jumbotron">
-                <div class="form-novoUsuario" id="campo_princ">
-                    <fieldset id="field_cadastro_user">
+                <div class="form-style" id="content">
+                    <fieldset id="field_novoUsuario">
                         <legend id="cad_user">CADASTRO DE NOVO USUÁRIO</legend>
-                        <form method="post" id="form_novoUsuario" action="novoUsuario.php" target="_blank">
+                        <form method="post" id="form_novoUsuario" action="./PHP/novoUsuario.php" target="_blank">
                             <p><label for="user">Login do Usuário</label><input type="text" name="username" id=""
                                     placeholder="Nome do usuário"></p>
                             <p><label for="password">Senha </label><input type="password" name="passwd" id=""
