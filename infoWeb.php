@@ -34,8 +34,27 @@
     <div class="content-container">
         <div class="container-fluid">
             <!-- Coloque o conteúdo da página aqui-->
-            <div class="jumbotron main-box">
-                <img src="./Imagens/linux-logo.jpg" class="logo">
+            <div class="jumbotron">
+                <p>Projeto para a matéria de Sistemas Operacionais II</p>
+                <p>Gerenciador de Usuários e Grupos para Linux</p>
+                <p>Integrantes do Grupo: </p>
+                <ul>
+                    <li>
+                        <p>Nome: Rodrigo Ventura</p>
+                    </li>
+                    <li>
+                        <p>Nome: Matheus Henrique</p>
+                    </li>
+                    <li>
+                        <p>Nome: César Gabriel</p>
+                    </li>
+                    <li>
+                        <p>Nome: Isaque Torres</p>
+                    </li>
+                    <li>
+                        <p>Nome: João Vitor Aguirra</p>
+                    </li>
+                </ul>
             </div>
         </div>
 </body>

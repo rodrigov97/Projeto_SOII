@@ -1,22 +1,21 @@
 <?php 
-
 $username = $_REQUEST["username"];
-$passwd = $_REQUEST["passwd"];
+$password = $_REQUEST["passwd"];
 $confirmedPasswd = $_REQUEST["confirmedPasswd"];
-$prGroup = $_REQUEST["prGrouprname"];
-$secGroup = $_REQUEST["secGroup"];
 $gecos = $_POST["gecos"];
 
-echo("Username: ". $username);
-echo("Senha: ". $passwd);
-echo("Senha confirmada: ". $confirmedPasswd);
-echo("grupo 1: ". $prGroup);
-echo("grupo 2: ". $secGroup);
-echo("gecos: ". $gecos);
+if ($password === $confirmedPasswd) {
+    $cmd = shell_exec("sudo adduser --home /home/${username} ${username} --gecos '${gecos}' 2>&1");
 
-//shell_exec("useradd -m -d /home/${username} ${username} -s /bin/bash");
-
-$cmd = "sudo /usr/sbin/useradd -m -p `openssl passwd -1 ${password}` ${username}";
-system($cmd);
-
+    $tmpfname = tempnam('/tmp/', 'chpasswd');
+    $handle = fopen($tmpfname, "w");
+    fwrite($handle, "$username:".crypt($password)."\n");
+    fclose($handle);
+    shell_exec("sudo sh -c \"chpasswd -e < $tmpfname\"");
+    
+    echo('Usuário cadastrado !');
+}
+else {
+    echo('Senha Inválida.');
+}
 ?>

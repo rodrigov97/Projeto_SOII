@@ -21,14 +21,14 @@
             <li class="header">Menu</li>
             <li><a href="index.html"><i class="fa fa-home icon-margin" aria-hidden="true"></i>Home</a></li>
             <li class="header">Usuário</li>
-            <li><a href="novoUsuario.html"><i class="fa fa-user icon-margin" aria-hidden="true"></i>Novo Usuário</a>
+            <li><a href="novoUsuarioWeb.php"><i class="fa fa-user icon-margin" aria-hidden="true"></i>Novo Usuário</a>
             </li>
-            <li><a href="removerUsuario.html"><i class="fa fa-remove icon-margin" aria-hidden="true"></i>Remover Usário</a></li>
+            <li><a href="removerUsuarioWeb.php"><i class="fa fa-remove icon-margin" aria-hidden="true"></i>Remover Usário</a></li>
             <li class="header">Grupo</li>
-            <li><a href="novoGrupo.html"><i class="fa fa-users icon-margin" aria-hidden="true"></i>Criar Grupo</a></li>
-            <li><a href="deletarGrupo.html"><i class="fa fa-remove icon-margin" aria-hidden="true"></i>Remover Grupo</a></li>
+            <li><a href="novoGrupoWeb.php"><i class="fa fa-users icon-margin" aria-hidden="true"></i>Criar Grupo</a></li>
+            <li><a href="deletarGrupoWeb.php"><i class="fa fa-remove icon-margin" aria-hidden="true"></i>Remover Grupo</a></li>
             <li class="header">Info</li>
-            <li><a href="#"><i class="fa fa-info-circle icon-margin" aria-hidden="true"></i>Info</a></li>
+            <li><a href="infoWeb.php"><i class="fa fa-info-circle icon-margin" aria-hidden="true"></i>Info</a></li>
         </ul>
     </div>
     <div class="content-container">
@@ -39,18 +39,15 @@
                     <fieldset id="field_removerUsuario">
                         <legend id="cad_user">REMOÇÃO DE CONTA DE USUÁRIO</legend>
                         <form method="post" id="form_removerUsuario" action="./PHP/removerUsuario.php" target="_blank">
-                            <p><label for="user">Login do Usuário</label><input type="text" name="username" id=""
-                                    placeholder="Nome do usuário"></p>
+                            <p><label for="user">Login do Usuário</label><input type="text" name="username" id="" placeholder="Nome do usuário"></p>
                             <p class="form-button">
                                 <label></label><input type="submit" form="form_removerUsuario" value="REMOVER"></input>
                             </p>
                         </form>
                         <legend id="cad_user" style="margin-top: 20px;">REMOÇÃO DE USUÁRIO DO GRUPO</legend>
                         <form method="post" id="form_removerGrupoUsuario" action="./PHP/removerGrupoUsuario.php" target="_blank">
-                            <p><label for="user">Login do Usuário</label><input type="text" name="username" id=""
-                                    placeholder="Nome do usuário"></p>
-                            <p><label for="group">Grupo</label><input type="text" name="group" id=""
-                                    placeholder="Grupo"></p>
+                            <p><label for="user">Login do Usuário</label><input type="text" name="username" id="" placeholder="Nome do usuário"></p>
+                            <p><label for="group">Grupo</label><input type="text" name="group" id="" placeholder="Grupo"></p>
                             <p class="form-button">
                                 <label></label><input type="submit" form="form_removerGrupoUsuario" value="REMOVER"></input>
                             </p>
