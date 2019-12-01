@@ -19,14 +19,15 @@
         <div class="sidebar-logo">Projeto SO II</div>
         <ul class="sidebar-navigation">
             <li class="header">Menu</li>
-            <li><a href="index.html"><i class="fa fa-home icon-margin" aria-hidden="true"></i>Home</a></li>
+            <li><a href="home.html"><i class="fa fa-home icon-margin" aria-hidden="true"></i>Home</a></li>
             <li class="header">Usuário</li>
-            <li><a href="novoUsuarioWeb.html"><i class="fa fa-user icon-margin" aria-hidden="true"></i>Novo Usuário</a>
-            </li>
-            <li><a href="removerUsuarioWeb.html"><i class="fa fa-remove icon-margin" aria-hidden="true"></i>Remover Usário</a></li>
+            <li><a href="novoUsuarioWeb.php"><i class="fa fa-user icon-margin" aria-hidden="true"></i>Novo Usuário</a></li>
+            <li><a href="removerUsuarioWeb.php"><i class="fa fa-remove icon-margin" aria-hidden="true"></i>Remover Usário</a></li>
+            <li><a href="usuarios.php"><i class="fa fa-info-circle icon-margin" aria-hidden="true"></i>Usuários</a></li>
             <li class="header">Grupo</li>
-            <li><a href="novoGrupoWeb.html"><i class="fa fa-users icon-margin" aria-hidden="true"></i>Criar Grupo</a></li>
-            <li><a href="deletarGrupoWeb.html"><i class="fa fa-remove icon-margin" aria-hidden="true"></i>Remover Grupo</a></li>
+            <li><a href="novoGrupoWeb.php"><i class="fa fa-users icon-margin" aria-hidden="true"></i>Criar Grupo</a></li>
+            <li><a href="deletarGrupoWeb.php"><i class="fa fa-remove icon-margin" aria-hidden="true"></i>Remover Grupo</a></li>
+            <li><a href="grupos.php"><i class="fa fa-info-circle icon-margin" aria-hidden="true"></i>Grupos</a></li>
             <li class="header">Info</li>
             <li><a href="infoWeb.html"><i class="fa fa-info-circle icon-margin" aria-hidden="true"></i>Info</a></li>
         </ul>

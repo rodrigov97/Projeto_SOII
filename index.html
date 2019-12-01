@@ -18,24 +18,25 @@
     <div class="sidebar-container">
         <div class="sidebar-logo">Projeto SO II</div>
         <ul class="sidebar-navigation">
-            <li class="header">Menu</li>
-            <li><a href="index.html"><i class="fa fa-home icon-margin" aria-hidden="true"></i>Home</a></li>
-            <li class="header">Usuário</li>
-            <li><a href="novoUsuarioWeb.html"><i class="fa fa-user icon-margin" aria-hidden="true"></i>Novo Usuário</a>
-            </li>
-            <li><a href="removerUsuarioWeb.html"><i class="fa fa-remove icon-margin" aria-hidden="true"></i>Remover Usário</a></li>
-            <li class="header">Grupo</li>
-            <li><a href="novoGrupoWeb.html"><i class="fa fa-users icon-margin" aria-hidden="true"></i>Criar Grupo</a></li>
-            <li><a href="deletarGrupoWeb.html"><i class="fa fa-remove icon-margin" aria-hidden="true"></i>Remover Grupo</a></li>
-            <li class="header">Info</li>
-            <li><a href="infoWeb.html"><i class="fa fa-info-circle icon-margin" aria-hidden="true"></i>Info</a></li>
         </ul>
     </div>
     <div class="content-container">
         <div class="container-fluid">
             <!-- Coloque o conteúdo da página aqui-->
-            <div class="jumbotron main-box">
-                <img src="./Imagens/linux-logo.jpg" class="logo">
+            <div class="jumbotron">
+                <div class="form-style" id="content">
+                    <fieldset id="field_novoUsuario">
+                        <legend id="cad_user">BEM VINDO</legend>
+                        <legend id="cad_user" style="margin-top: 30px;">LOGIN</legend>
+                        <form method="post" id="form_novoUsuario" action="./PHP/login.php" target="_blank">
+                            <p><label for="user">Nome de Usuário</label><input type="text" name="username" id="" placeholder="Nome do usuário"></p>
+                            <p><label for="password">Senha </label><input type="password" name="passwd" id="" placeholder="Senha"></p>
+                            <p class="form-button">
+                                <label style="margin-right: 30px;"></label><input type="submit" form="form_novoUsuario" value="LOGIN"></input>
+                            </p>
+                        </form>
+                    </fieldset>
+                </div>
             </div>
         </div>
 </body>

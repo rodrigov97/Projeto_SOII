@@ -35,18 +35,12 @@
     <div class="content-container">
         <div class="container-fluid">
             <!-- Coloque o conteúdo da página aqui-->
-            <div class="jumbotron">
-                <div class="form-style" id="content">
-                    <fieldset id="field_novoGrupo">
-                        <legend id="cad_user">CADASTRO DE NOVO GRUPO</legend>
-                        <form method="post" id="form_novoGrupo" action="./PHP/novoGrupo.php" target="_blank">
-                            <p><label for="group">Grupo </label><input type="text" name="group" id="" placeholder="Grupo"></p>
-                            <p class="form-button">
-                                <label></label><input type="submit" form="form_novoGrupo" value="CRIAR"></input>
-                            </p>
-                        </form>
-                    </fieldset>
-                </div>
+            <div class="jumbotron user-list">
+            <legend id="cad_user">GRUPOS DO SISTEMA</legend>
+                    <?php 
+                        $groups = shell_exec('sudo ./Scripts/groups.sh 2>&1');
+                        echo("$groups");
+                    ?>
             </div>
         </div>
 </body>
